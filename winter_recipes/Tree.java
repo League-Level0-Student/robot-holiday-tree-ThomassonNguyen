@@ -16,14 +16,14 @@ public class Tree  {
   static double scale = 1.1;   
 	
   public static void main(String[] args) {
-
+	  
 	  // 1. Make the robot go fast
-
+	  	rob.setSpeed(256);
 	  
 	  // 2. Tell the robot to put its pen down
-
+	  	rob.penDown(); 
 	  // 3. Find the method called drawBranches below and complete its code
-      drawBranches();
+	 drawBranches(); 
       
 	  // 4. Find the method called drawTrunk below and complete its code
       drawTrunk();
@@ -36,16 +36,22 @@ public class Tree  {
     
     static void drawBranches() {
         //  Change the color of the line the robot draws to green    
-
+    	rob.setPenColor(100,0,10);
         //  Make an int variable called turnAmount and set it to 175
-
+    	int turnamount;
         //  Set the robot's angle so it faces right
-
+    	rob.turn(90);
         //  Make a for loop that repeats 11 times and put the rest of the code that draws branches inside the for loop
-   
+    	for (int i = 0; i < 11; i++) {
+    		rob.move(100);
+    		rob.turn(90);
+    		for (int i = 0; i < 11; i++) { 
+    			rob.
+    		}
+    	}
 
             // Move the robot the width of the tree (use the treeWidth variable from the top of this program)
-    		
+    		rob.move(100);
             // Turn the robot (use the turnAmount variable you made earlier)
     		
             // Scale up the treeWidth (    treeWidth *= scale;   )
@@ -57,11 +63,17 @@ public class Tree  {
             // Scale up the treeWidth again (    treeWidth *= scale;   )
    
             // Decrease turnAmount by 1
- 
+    		
     	// Make sure your for loop ends here!
 }
     
-    static void drawTrunk() {
+    private static void turn(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	static void drawTrunk() {
         //  Move the robot half the width of the tree
     	
 
